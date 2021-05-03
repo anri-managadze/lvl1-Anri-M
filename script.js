@@ -7,14 +7,14 @@ function searchShow(query) {
                 return {
                     artistName: movie.artistName,
                     trackName:movie.trackName,
-                    trackViewUrl:movie.trackViewUrl
+                    previewUrl:movie.previewUrl
                 }
             });
             console.log(result);
 
             let tmp=`<thead><tr><th>Name</th><th>TrackName</th><th>TrackUrl</th></tr></thead>`;
             for(let i=0; i< result.length; i++){
-                tmp+=`<tbody><tr><td>${result[i].artistName}</th><td>${result[i].trackName}</td><td><a href="${result[i].trackViewUrl}" target="_blank">Open</a></td></tr></tbody>`
+                tmp+=`<tbody><tr><td>${result[i].artistName}</th><td>${result[i].trackName}</td><td><audio controls><source src="${result[i].previewUrl}"></audio></td></tr></tbody>`
             }
             console.log(tmp);
 
