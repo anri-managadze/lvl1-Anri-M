@@ -1,0 +1,57 @@
+html, body {
+    top:0;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background: #f2f2fb;
+}
+table, tr , th, td {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 4px;
+}
+th, td {
+    height: 30px;
+    background: #E1E1F6;
+}
+th {
+    background: #4682B4;
+    color: white;
+    font-size: 20px;
+}
+td {
+    font-size: 15px;
+}
+
+#output {
+    width: 90%;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+label {
+    font-size: 25px;
+}
+input {
+    min-width: 500px;
+    min-height: 30px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 4px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    background: #4682B4;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
