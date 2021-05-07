@@ -2,17 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Music</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
      <script src="script.js" defer></script>
 </head>
 <body>
+<header>
+    <a href="#" id="reload"><img src="https://assets.materialup.com/uploads/45107ffd-e074-444d-8111-76af0065c7d5/0x0ss-85.jpg" alt="music" ></a>
     <form action="" id="myForm">
-        <label for="text">Please write the name of the artist</label>
-        <input type="text" name="text" id="text">
-        <button type="button" onclick="myFunction()" >Click</button>
+        <input type="text" name="text" id="text" placeholder="Search">
+        <button type="submit" id="search_btn" ><i class="fa fa-search"></i></button>
     </form>
-    <table id="output">
-    </table>
+</header>
+<div id="main_nav">
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-music"></i>Free music</li>
+            <li><i class="far fa-play-circle"></i>Playlist</li>
+            <li><i class="fas fa-star"></i>Favorites</li>
+            <li><i class="fas fa-history"></i>History</li>
+        </ul>
+    </nav>
+    <button id="nav_btn">Add Music</button>
+</div>
+    <div id="output">
+    </div>
 </body>
 </html>
