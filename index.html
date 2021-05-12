@@ -2,11 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Music</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+     <script src="script.js" defer></script>
 </head>
 <body>
+<header>
+    <a href="#" id="reload"><img src="https://img.freepik.com/free-vector/letter-m-with-pulse-music-player-element-logo-template-electronic-music-equalizer-store-dj-nightclub-disco-audio-wave-logo-concept-multimedia-technology-themed-abstract-shape_207119-189.jpg?size=626&ext=jpg" alt="music" ></a>
+    <form action="" id="myForm">
+        <input type="text" name="text" id="text" placeholder="Search">
+        <button type="submit" id="search_btn" ><i class="fa fa-search"></i></button>
+    </form>
+</header>
+<div id="main_nav">
+    <nav>
+        <div class="burger-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+        </div>
+        <ul class="mainMenu">
+            <li><i class="fas fa-home"></i>Home</li>
+            <li id="pl_btn"><i class="fas fa-music"></i>Free music</li>
+            <li><i class="far fa-play-circle"></i>Playlist</li>
+            <li><i class="fas fa-star"></i>Favorites</li>
+            <li><i class="fas fa-history"></i>History</li>
+            <li><button id="nav_btn">Add Music</button></li>
+        </ul>
+    </nav>
+</div>
+    <div id="output"></div>
+<!-- slide --start  -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="https://img.etimg.com/thumb/msid-81525531,width-650,imgsize-622277,,resizemode-4,quality-100/music_thinkstockphotos.jpg" alt="photo">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="https://cdn.wallpapersafari.com/70/91/goRHP2.jpg" alt="photo">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="https://www.headphonecheck.com/wp-content/uploads/2018/12/tps_1335_440156_May19716-440156-1-1920x1080.jpg" alt="photo">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="https://a-static.besthdwallpaper.com/digital-music-wallpaper-3000x2000-12100_42.jpg" alt="photo">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="https://data.1freewallpapers.com/download/conductor-orchestra-violins-cello-piano-musical-instruments.jpg" alt="photo">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<!-- slide --end  -->
+
+<!-- Modal --start  -->
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form action="" id="modal_form">
+            <p>Please Add Your Music</p>
+            <input type="text" id="mname" placeholder="Music Name">
+            <input type="text" id="aname" placeholder="Artist Name">
+            <input type="text" id="country " placeholder="Country">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit" id="mod_sub">
+        </form>
+    </div>
+</div>
+<!-- Modal --end  -->
 
 </body>
 </html>
