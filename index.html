@@ -2,11 +2,367 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <title>Title</title>
 </head>
 <body>
+    <div class="container-fluid">
+    <header>
+        <!-- First line welcome, number, account start-->
+        <div class="row welcome">
+            <div class="welcome_text d-flex flex-row align-items-center text-secondary ">
+                <div class="d-flex col-3">Welcome to Our store Multikart</div>
+                <div class="col-7"><i class="fas fa-phone-alt text-danger me-2"></i>Call Us: 123 - 456 - 7890</div>
+                <div class="d-flex col-2 justify-content-end"><a href="#"><i class="fas fa-heart text-secondary me-4"></i></a> <a href="#" class="text-secondary"><i class="fas fa-user me-2"></i>My Account</a> </div>
+            </div>
+        </div>
+        <!-- First line welcome, number, account end-->
 
+        <!-- second line menu, logo, nav, search, setting, cart start-->
+        <div class="d-flex flex-row align-items-center menu_logo">
+            <div class="col-1">
+               menu
+            </div>
+            <div class="col-3"><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo"></div>
+            <div class="d-flex col-7 d-block justify-content-around ">
+                <a href="#" class="text-dark">Home</a>
+                <a href="#" class="text-dark">Feature</a>
+                <a href="#" class="text-dark">Shop</a>
+                <a href="#" class="text-dark">Product</a>
+                <a href="#" class="text-dark">Pages</a>
+                <a href="#" class="text-dark">Blog</a>
+            </div>
+            <div class="d-flex col-1 justify-content-between">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-cog"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div>
+        <!-- second line menu, logo, nav, search, setting, cart end-->
+    </header>
+    <main>
+        <!-- slider start-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/home-banner/1.jpg" class="d-block w-100" alt="photo slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/home-banner/2.jpg" class="d-block w-100" alt="photo slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- slider end-->
+
+        <!-- save banner start-->
+        <div class="row d-flex justify-content-between mt-5 save_banner">
+            <div class="col-md-6">
+                <a href="#">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/sub-banner2.jpg" class="img-fluid" alt="photo">
+                    <div class="cont_banner">
+                        <h4>save 30%</h4>
+                        <h2>men</h2>
+                    </div>
+                </a>
+        </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/sub-banner2.jpg" class="img-fluid" alt="photo">
+                </a>
+                <h4>save 30%</h4>
+                <h2>women</h2>
+            </div>
+         </div>
+        <!-- save banner end-->
+
+        <!-- special offer start-->
+        <div class="col text-center mt-5 spec_text" >
+            <h4>special offer</h4>
+            <h2>Latest Drops</h2>
+            <p>Looking for the latest trends in clothing, shoes and accessories? Welcome to our 'Latest Drops' edit, bringing you all the latest styles from all your fave brands.</p>
+        </div>
+        <!-- spec offer card start-->
+        <div class="row justify-content-around spec_card">
+            <div class="col">
+                <div class="card ">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/27.jpg" class="card-img-top h50" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="product">Purple Polo Tshirt</h5>
+                        <p class="product_price">$20.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">White Top</h5>
+                        <p class="product_price">$ 25.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/33.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">Polo Tshirt</h5>
+                        <p class="product_price">$40.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/36.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">Red Solid Tshirt</h5>
+                        <p class="product_price">$35.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card end-->
+        <!-- special offer end-->
+
+        <!-- Exclusive Products  start-->
+        <div class="col text-center mt-5 excl_text" >
+            <h4>Exclusive Products</h4>
+            <h2>EVERYDAY CASUAL</h2>
+            <div class="col">
+                <a href="#">WORK CASUAL</a>
+                <a href="#">WFH WEAR</a>
+                <a href="#">COMFORT WEAR</a>
+            </div>
+        </div>
+        <!-- Exclusive product card 1 line start-->
+        <div class="row justify-content-around  mt-5 excl_card">
+            <div class="col">
+                <div class="card ">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/27.jpg" class="card-img-top h50" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="product">Purple Polo Tshirt</h5>
+                        <p class="product_price">$20.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">White Top</h5>
+                        <p class="product_price">$ 25.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/33.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">Polo Tshirt</h5>
+                        <p class="product_price">$40.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/36.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">Red Solid Tshirt</h5>
+                        <p class="product_price">$35.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Exclusive product card 1 line end-->
+        <!-- Exclusive product card 2 line start-->
+        <div class="row justify-content-around mt-5 excl_card">
+            <div class="col">
+                <div class="card">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/27.jpg" class="card-img-top h50" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="product">Purple Polo Tshirt</h5>
+                        <p class="product_price">$20.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">White Top</h5>
+                        <p class="product_price">$ 25.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/33.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">Polo Tshirt</h5>
+                        <p class="product_price">$40.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card " >
+                    <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/36.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-5">
+                        <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <h5 class="procuct">Red Solid Tshirt</h5>
+                        <p class="product_price">$35.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Exclusive product card 2 line end-->
+        <!-- Exclusive Products  end-->
+
+        <!-- offers shipping servise  start-->
+        <div class="row d-flex flex-row justify-content-between mt-5 offer_card">
+        <div class="card w-25">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <div class="col-md-8">
+                    <div class="offer-card-body">
+                        <p class="offer-card-text">Free Shipping</p>
+                        <p class="offer-card-text">Free Shipping World Wide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="offer-card-text">24 X 7 Service</p>
+                        <p class="offer-card-text">Online Service For New Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card w-25">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <i class="fa fa-gift"></i>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="offer-card-text">Festival Offer</p>
+                        <p class="offer-card-text">New Online Special Festival Offer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- offers shipping servise end-->
+
+        <!-- #WHOWEARWHAT start-->
+        <div class="row mt-5 text-center ">#WHOWEARWHAT</div>
+        <div class="row ">
+            <div class="col">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZhc2hpb258ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="" width= "100%"  height="250px">
+            </div>
+            <div class="col">
+                <img src="https://image.winudf.com/v2/image/Y29tLmJveXNmYXNoaW9uc3R5bGVzLmFyaXN1cGVyX3NjcmVlbl8zXzE1MjcxOTA5MzFfMDUw/screen-3.jpg?fakeurl=1&type=.jpg" alt="" width=" 100%" height="250px">
+            </div>
+            <div class="col">
+                <img src="https://thehighestfashion.com/wp-content/uploads/2020/11/Teen-Boys-Styles-liviuch.jpg" alt="" width=" 100%" height="250px">
+            </div>
+            <div class="col">
+                <img src="https://urbanmenoutfits.com/wp-content/uploads/2019/01/fashion-guide-for-teen-guy-02-e1547982581317.jpeg" alt=""  width= "100%" height="250px" >
+            </div>
+            <div class="col">
+                <img src="https://i.pinimg.com/564x/a0/c4/a3/a0c4a3689ac6e91435225900f80bb56f.jpg" alt="" width=" 100%" height="250px" >
+            </div>
+        </div>
+        <!-- #WHOWEARWHAT end-->
+    </main>
+    <footer class="text-secondary mt-5te">
+        <!-- footer first line start -->
+        <div class="row mt-5 foot_first_line justify-content-between">
+            <div class="col-md-5 mt-5">
+                <p>KNOW IT ALL FIRST!</p>
+                <p>Never Miss Anything From Multikart By Signing Up To Our Newsletter.</p>
+            </div>
+            <div class="d-flex col-md-5 mt-5">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <!-- footer first line end-->
+
+        <!-- footer second line start-->
+        <div class="row mt-5 d-flex foot_second_line">
+            <div class="d-flex flex-column col-5">
+                <img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo" class="w-50 ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <div>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-google-plus"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fas fa-wifi"></i>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>MY ACCOUNT</p>
+                <div class="d-flex flex-column">
+                    <a href="#">Mens</a>
+                    <a href="#">Womens</a>
+                    <a href="#">Clothing</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Featured</a>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>WHY WE CHOOSE</p>
+                <div class="d-flex flex-column">
+                    <a href="#">Shipping & Return</a>
+                    <a href="#">Secure Shopping</a>
+                    <a href="#">Gallary</a>
+                    <a href="#">Affiliates</a>
+                    <a href="#">Contacts</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <p>STORE INFORMATION</p>
+                <div class="d-flex flex-column">
+                    <a href="#" ><i class="fas fa-map-marker-alt"></i><p>Multikart Demo Store, Demo Store India 345-659</p></a>
+                    <a href="#" class="d-flex align-items-center"><i class=" fas fa-phone-alt"></i><p>Call Us: 123-456-7898</p></a>
+                    <a href="#" class="d-flex align-items-center"><i class=" fas fa-envelope-open"></i><p>Email Us:</p></a>
+                    <a href="#" class="d-flex align-items-center"><i class=" fas fa-fax"></i><p>Fax</p></a>
+                </div>
+            </div>
+        </div>
+        <!-- footer second line end-->
+    </footer>
+    </div>
 </body>
 </html>
