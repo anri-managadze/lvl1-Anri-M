@@ -19,9 +19,12 @@
             <div class="welcome_text d-flex flex-row align-items-center text-secondary display-9">
                 <div class="d-flex col-3">Welcome to Our store Multikart</div>
                 <div class="col-7"><i class="fas fa-phone-alt text-orange me-2"></i>Call Us: 123 - 456 - 7890</div>
-                <div class="d-flex col-2 justify-content-end"><a href="#"><i class="fas fa-heart text-secondary me-4 "></i></a> <a href="#" class="text-secondary"><i class="fas fa-user me-2"></i>My Account</a> </div>
+                <div class="d-flex col-2 justify-content-end">
+                    <div><i class="fas fa-heart  me-4 hover-text-orange"></i></div>
+                    <div><a href="#" class="text-secondary"><i class="fas fa-user me-2 hover-text-orange"></i>My Account</a></div>
             </div>
         </div>
+            </div>
         <!-- First line welcome, number, account end-->
 
         <!-- second line menu, logo, nav, search, setting, cart start-->
@@ -30,57 +33,291 @@
             <div class="col-2 col-md-1 ">
                 <button class="bg-white border-0 display-7" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i></button>
                 <div class="offcanvas offcanvas-start " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title mt-5" id="offcanvasScrollingLabel"><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> Back</h5>
+                    <div class="offcanvas-header border-bottom pt-4 pb-4 ">
+                        <button type="button" class="border-0 bg-white " data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-chevron-left"></i> BACK</button>
                     </div>
-                    <div class="offcanvas-body mt-5 ms-2 d-flex flex-column align-content-center">
-                        <p>CLOSING</p>
-                        <p>BAGS</p>
-                        <p>FOOTWEAR</p>
-                        <p>WATCHES</p>
-                        <p>ACCESSORIES</p>
-                        <p>HOUSE OF DESIGN</p>
-                        <p>BEAUTY&PERSONAL CARE</p>
-                        <p>HOME&DECOR</p>
-                        <p>KITCHEN</p>
+                    <div class="offcanvas-body mt-5">
+                        <ul>
+                            <li class="hover-text-orange">CLOSING<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+                            <li class="hover-text-orange">BAGS<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+                            <li class="hover-text-orange">FOOTWEAR<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+                            <li class="hover-text-orange">WATCHES</li>
+                            <li class="hover-text-orange">ACCESSORIES<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+                            <li class="hover-text-orange">HOUSE OF DESIGN</li>
+                            <li class="hover-text-orange">BEAUTY&PERSONAL CARE<i class="fas fa-chevron-right float-end display-10 mt-4"></i></li>
+                            <li class="hover-text-orange">HOME&DECOR</li>
+                            <li class="hover-text-orange">KITCHEN</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <!--burger menu left end -->
-            <div class="col-8 text-center col-md-2 "><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo" id="reload"></div>
-            <div class="d-none d-md-flex col-md-6 justify-content-between ms-5">
-                <a href="#" class="text-dark">Home</a>
-                <a href="#" class="text-dark">Feature</a>
-                <a href="#" class="text-dark">Shop</a>
-                <a href="#" class="text-dark">Product</a>
-                <a href="#" class="text-dark">Pages</a>
-                <a href="#" class="text-dark">Blog</a>
+
+            <div class="col-8 text-center col-md-2 "><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo" id="reload" ></div>
+            <div class="d-none d-md-flex col-md-6 justify-content-between ms-5 nav_header">
+                <!--dropdown start -->
+                <ul class="dropdown"><li><div class="hover-text-orange">HOME</div></li></ul>
+                <ul class="dropdown grow">
+                    <li>
+                        <div class="hover-text-orange">FEATURE<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+                        <!-- First level sub dropdown -->
+                        <ul class="grow-1 row">
+                            <div class="d-flex justify-content-between">
+                            <li >
+                                <div class="fw-bold mb-1">Add Cart</div>
+                                <div>Cart Modal Popup</div>
+                                <div>Qty. Counter<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                                <div>Cart Top</div>
+                                <div>Cart Bottom</div>
+                                <div>Cart Left</div>
+                                <div>Cart Right</div>
+                            </li>
+                            <li >
+                                <div class="fw-bold mb-1">Model</div>
+                                <div>Exit<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                                <div>Christmas</div>
+                                <div>Black Friday</div>
+                                <div>Cyber Monday</div>
+                                <div>New Year</div>
+                            </li>
+                                <li >
+                                    <div class="fw-bold mb-1">Cookie Bar</div>
+                                    <div>Bottom<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                                    <div>Bottom Left</div>
+                                    <div>Bottom Right</div>
+                                    <div class="fw-bold mb-1">Search</div>
+                                    <div>Ajax Search<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                                </li>
+                                <li >
+                                    <div class="fw-bold mb-1">Invoice template</div>
+                                    <div>Invoice 1</div>
+                                    <div>Invoice 2</div>
+                                    <div>Invoice 3</div>
+                                    <div>Invoice 4</div>
+                                    <div>Invoice 5</div>
+                                </li>
+                                <li >
+                                    <div class="fw-bold mb-1" >Email Template</div>
+                                    <div>Order Success</div>
+                                    <div>Order Success 2</div>
+                                    <div>Email Template</div>
+                                    <div>Email Template 2</div>
+                                    <div class="fw-bold mb-1">Elements</div>
+                                    <div>Elements Pages<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <!--<div class="dropdown">
+                    <div class="hover-text-orange dropdown-toggle">FEATURE</div>
+                    <div class="dropdown-content">
+                        <div class="d-flex justify-content-between cont_large">
+                        <div>
+                            <div>Add Cart</div>
+                            <a href="#">Cart Modal Popup</a>
+                            <a href="#">Qty. Counter</a>
+                            <a href="#">Cart Top</a>
+                            <a href="#">Cart Bottom</a>
+                            <a href="#">Cart Left</a>
+                            <a href="#">Cart Right</a>
+                        </div>
+                        <div>
+                            <div>Model</div>
+                            <a href="#">Newsletter</a>
+                            <a href="#">Exit<i class="ms-2 fa fa-bolt icon-trend" aria-hidden="true"></i></a>
+                            <a href="#">Christmas</a>
+                            <a href="#">Black Friday</a>
+                            <a href="#">Cyber Monday</a>
+                            <a href="#">New Year</a>
+                        </div>
+                        <div>
+                            <div>Cookie Bar</div>
+                            <a href="#">Bottom<i class="ms-2 fa fa-bolt icon-trend" aria-hidden="true"></i></a>
+                            <a href="#">Bottom Left</a>
+                            <a href="#">Bottom Right</a>
+                        </div>
+                        <div>
+                            <div>Invoice template</div>
+                            <a href="#">Invoice 1</a>
+                            <a href="#">Invoice 2</a>
+                            <a href="#">Invoice 3</a>
+                            <a href="#">Invoice 4</a>
+                            <a href="#">Invoice 5</a>
+                            <a href="#">Cart Right</a>
+                        </div>
+                        <div>
+                            <div>Email Template</div>
+                            <a href="#">Order Success</a>
+                            <a href="#">Order Success 2</a>
+                            <a href="#">Email Template</a>
+                            <a href="#">Email Template 2</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>-->
+                <ul class="dropdown">
+                    <li>
+                        <div class="hover-text-orange">SHOP<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+                        <!-- First level sub dropdown -->
+                        <ul>
+                            <li>Top Filter<span class="text-orange ms-1">New</span></li>
+                            <li>Modern<span class="text-orange ms-1">New</span></li>
+                            <li>Left Sidebar</li>
+                            <li>Right Sidebar</li>
+                            <li>No Sidebar</li>
+                            <li>Sidebar Popup</li>
+                            <li>Metro</li>
+                            <li>Full Width</li>
+                            <li>Infinite Scroll</li>
+                            <li>Input</li>
+                            <li>Three Grid</li>
+                            <li>List View</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li>
+                        <div class="hover-text-orange">PRODUCT<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+                        <!-- First level sub dropdown -->
+                        <ul>
+                            <li>360 View<span class="text-orange ms-1">New</span></li>
+                            <li>video thumbnail<span class="text-orange ms-1">New</span></li>
+                            <li>
+                                <div>Sidebar<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                                <!-- Second level sub dropdown -->
+                                <ul>
+                                    <li>Left Sidebar</li>
+                                    <li>Right Sidebar</li>
+                                    <li>No Sidebar</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Thumbnail Image<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                                <!-- Second level sub dropdown -->
+                                <ul>
+                                    <li>Left Image</li>
+                                    <li>Right Image</li>
+                                    <li>Image Outside</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Three Column<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                                <!-- Second level sub dropdown -->
+                                <ul>
+                                    <li>Thumbnail Left</li>
+                                    <li>Thumbnail Right</li>
+                                    <li>Thubnail Bottom</li>
+                                </ul>
+                            </li>
+                            <li>Four image</li>
+                            <li>Sticky</li>
+                            <li>Accordian</li>
+                            <li>Bundle</li>
+                            <li>Image Swatch</li>
+                            <li>Vertical Tab</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li>
+                        <div class="hover-text-orange">PAGES<i class="fas fa-chevron-down ms-2 display-10 mt-2"></i></div>
+                        <!-- First level sub dropdown -->
+                        <ul>
+                            <li>
+                                <div>Vendor Dashboard<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                                <!-- Second level sub dropdown -->
+                                <ul>
+                                    <li>Vendor Dashboard</li>
+                                    <li>Vendor Profile</li>
+                                    <li>Become Vendor</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Account<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                                <!-- Second level sub dropdown -->
+                                <ul>
+                                    <li>Wishlist</li>
+                                    <li>Cart</li>
+                                    <li>Dashboard</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Portfolio<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                                <!-- Second level sub dropdown -->
+                                <ul>
+                                    <li>Grid</li>
+                                    <li>Masonry</li>
+                                </ul>
+                            </li>
+                            <li>about us</li>
+                            <li>search</li>
+                            <li>compare</li>
+                            <li>collectio</li>
+                            <li>site map</li>
+                            <li>404</li>
+                            <li>coming soon</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="dropdown">
+                    <li>
+                        <div class="hover-text-orange">BLOG<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+                        <!-- First level sub dropdown -->
+                        <ul>
+                            <li>Left Sidebar</li>
+                            <li>Right Sidebar</li>
+                            <li>No Sidebar</li>
+                            <li>Blog Details</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
+            <!--dropdown end -->
+
+            <!--setting and cart dropdown start-->
             <div class=" d-md-flex d-none justify-content-end col-md-2 ">
-                <i class="fas fa-search display-8 ms-3"></i>
-                <i class="fas fa-cog display-8 ms-3"></i>
-                <i class="fas fa-shopping-bag display-8 ms-3"></i>
+                <ul class="dropdown">
+                    <li><i class="fas fa-search display-8 ms-3"></i></li>
+                    <li>
+                        <div><i class="fas fa-cog display-8 ms-3"></i></div>
+                        <ul style="width: 100px">
+                            <li class="p-0 fw-bold">Language</li>
+                            <li>English</li>
+                            <li>French</li>
+                            <li class="p-0 fw-bold">Currency</li>
+                            <li>Euro</li>
+                            <li>Pound</li>
+                            <li>Dollar</li>
+                        </ul>
+                    </li>
+                    <li><i class="fas fa-shopping-bag display-8 ms-3"></i></li>
+                </ul>
             </div>
+                <!--setting and cart dropdown end-->
+
             <!--burger menu right start -->
             <button class="bg-white border-0 display-7 d-flex d-md-none col-2 justify-content-end " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars text-orange"></i></button>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel" class="mt-5"><button type="button" class="bg-white border-0 display-7" data-bs-dismiss="offcanvas" aria-label="Close">Back > </button></h5>
-
+                <div class="offcanvas-header pt-4 pb-4 border-bottom d-flex justify-content-end">
+                    <button type="button" class="bg-white border-0 " data-bs-dismiss="offcanvas" aria-label="Close">Back <i class="fas fa-chevron-right"></i> </button>
                 </div>
                 <div class="offcanvas-body mt-5 me-2 d-flex flex-column align-content-between">
-                    <p>HOME</p>
-                    <p>FEATURE</p>
-                    <p>SHOP</p>
-                    <p>PRODUCT</p>
-                    <p>PAGES</p>
-                    <p>BLOG</p>
+                    <ul>
+                        <li class="hover-text-orange">HOME<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+                        <li class="hover-text-orange">FEATURE<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+                        <li class="hover-text-orange">SHOP<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+                        <li class="hover-text-orange">PRODUCT<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+                        <li class="hover-text-orange">PAGES<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+                        <li class="hover-text-orange">BLOG<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+                    </ul>
                 </div>
             </div>
             <!--burger menu right end -->
-        </div>
         <!-- second line menu, logo, nav, search, setting, cart end-->
+        </div>
     </header>
     <main>
         <!-- slider start-->
@@ -132,6 +369,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="product">Purple Polo Tshirt</h5>
                     <p class="product_price">$20.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
@@ -140,6 +382,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="procuct">White Top</h5>
                     <p class="product_price">$ 25.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-md-3 d-md-block d-none">
@@ -148,6 +395,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="procuct">Polo Tshirt</h5>
                     <p class="product_price">$40.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-md-3 d-md-block d-none">
@@ -156,6 +408,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="procuct">Red Solid Tshirt</h5>
                     <p class="product_price">$35.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,6 +437,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="product">Purple Polo Tshirt</h5>
                     <p class="product_price">$20.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
@@ -188,6 +450,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="procuct">White Top</h5>
                     <p class="product_price">$ 25.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
@@ -196,6 +463,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="procuct">Polo Tshirt</h5>
                     <p class="product_price">$40.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-md-3">
@@ -204,6 +476,11 @@
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="procuct">Red Solid Tshirt</h5>
                     <p class="product_price">$35.00</p>
+                    <div class="d-flex">
+                        <div class="color_circles color_circles1"></div>
+                        <div class="color_circles color_circles2"></div>
+                        <div class="color_circles color_circles3"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,6 +493,11 @@
                         <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                         <h5 class="product">Purple Polo Tshirt</h5>
                         <p class="product_price">$20.00</p>
+                        <div class="d-flex">
+                            <div class="color_circles color_circles1"></div>
+                            <div class="color_circles color_circles2"></div>
+                            <div class="color_circles color_circles3"></div>
+                        </div>
                     </div>
             </div>
             <div class="col-6 col-md-3">
@@ -224,6 +506,11 @@
                         <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                         <h5 class="procuct">White Top</h5>
                         <p class="product_price">$ 25.00</p>
+                        <div class="d-flex">
+                            <div class="color_circles color_circles1"></div>
+                            <div class="color_circles color_circles2"></div>
+                            <div class="color_circles color_circles3"></div>
+                        </div>
                     </div>
                 </div>
             <div class="col-6 col-md-3">
@@ -232,6 +519,11 @@
                         <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                         <h5 class="procuct">Polo Tshirt</h5>
                         <p class="product_price">$40.00</p>
+                        <div class="d-flex">
+                            <div class="color_circles color_circles1"></div>
+                            <div class="color_circles color_circles2"></div>
+                            <div class="color_circles color_circles3"></div>
+                        </div>
                     </div>
                 </div>
             <div class="col-6 col-md-3">
@@ -240,6 +532,12 @@
                         <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                         <h5 class="procuct">Red Solid Tshirt</h5>
                         <p class="product_price">$35.00</p>
+                        <div class="d-flex">
+                            <div class="color_circles color_circles1"></div>
+                            <div class="color_circles color_circles2"></div>
+                            <div class="color_circles color_circles3"></div>
+                        </div>
+
                     </div>
                 </div>
         </div>
@@ -314,7 +612,9 @@
                 <p>Never Miss Anything From Multikart By Signing Up To Our Newsletter.</p>
             </div>
             <div class="d-flex col-md-5 mt-5">
-                <input type="email" class="border-0 " placeholder="Email" style="width:240px; height:45px">
+                <label>
+                    <input type="email" class="border-0 " placeholder="Email" style="width:240px; height:45px">
+                </label>
                 <button style="width:140px; height:45px" class="border-0 bg-orange text-light ms-3">Subscribe</button>
             </div>
         </div>

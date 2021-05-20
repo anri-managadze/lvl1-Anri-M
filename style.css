@@ -16,15 +16,6 @@ ul li {
 .menu_logo{
     padding: 30px 0;
 }
-.display-7 {
-    font-size: 28px;
-}
-.display-8 {
-    font-size: 24px;
-}
-.display-9 {
-    font-size: 14px;
-}
 .menu_logo, .save_banner, .spec_text, .spec_card, .excl_text, .excl_card, .offer_card, .foot_first_line, .foot_second_line, .foot_third_line, .welcome_text{
     width:85%;
     margin: 0 auto;
@@ -35,20 +26,7 @@ ul li {
 footer {
     background: #F8F8F8;
 }
-input{
-    width: 220px;
-    height: 50px;
-    color: #afa9a9;
-}
-.bg-orange{
-    background: #FF4C3B;
-}
-.text-orange {
-    color: #FF4C3B;
-}
-.raiting{
-    color: #FFA200;
-}
+
 .foot_second_line a, .foot_second_line .a {
     font-size: 13px;
     line-height: 3;
@@ -61,3 +39,116 @@ input{
 span {
     margin-bottom: 25px;
 }
+.offcanvas-body {
+    line-height: 2.8;
+    cursor: pointer;
+}
+/*hover dropdowns start*/
+.dropdown {
+    /* Border */
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.dropdown li {
+    /* Spacing */
+    padding: 8px;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+    z-index: 1;
+}
+
+/* The sub dropdown */
+.dropdown ul {
+    background: white;
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+
+    /* Width */
+    min-width: 260px;
+    z-index: 1;
+}
+/* The second level sub dropdown */
+.dropdown ul ul {
+    left: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+.grow .grow-1{
+    min-width: 800px;
+    right: auto;
+    left: 40%;
+    transform: translate(-40%, 0);
+    z-index: 1;
+    line-height: 2.5;
+}
+/* Show the direct sub dropdown when hovering the list item */
+.dropdown li:hover > ul {
+    display: block;
+    z-index: 1;
+}
+/*hover dropdowns end*/
+
+/* my boostramp class start */
+.display-7 {
+    font-size: 28px;
+}
+.display-8 {
+    font-size: 24px;
+}
+.display-9 {
+    font-size: 14px;
+}
+.display-10 {
+    font-size: 10px;
+}
+.bg-orange{
+    background: #FF4C3B;
+}
+.text-orange {
+    color: #FF4C3B;
+}
+.hover-text-orange:hover {
+    color: #FF4C3B;
+    transition: 0.3s;
+}
+.raiting{
+    color: #FFA200;
+}
+.color_circles{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 5px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+.color_circles1{
+    background: #d0edff;
+}
+.color_circles2{
+    background: #f1e7e6;
+}
+.color_circles3{
+    background: #bfbfbf;
+}
+
+/* my boostramp class end */
