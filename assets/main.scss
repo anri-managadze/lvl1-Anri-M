@@ -1,0 +1,154 @@
+@use '../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul{
+  li{
+    padding: 0;
+    list-style: none;
+  }
+}
+.menu_logo{
+  padding: 30px 0;
+}
+.menu_logo, .save_banner, .spec_text, .spec_card, .excl_text, .excl_card, .offer_card, .foot_first_line, .foot_second_line, .foot_third_line, .welcome_text, .logo_whowear{
+  width:85%;
+  margin: 0 auto;
+}
+.offcanvas {
+  width: 300px;
+}
+footer {
+  background: #F8F8F8;
+}
+.foot_second_line {
+  a, .a {
+    font-size: 13px;
+    line-height: 3;
+    color: #6C757D;
+  }
+  .col-7 i {
+    color: black;
+    font-size: 15px;
+  }
+}
+.offcanvas-body {
+  line-height: 2.8;
+  cursor: pointer;
+}
+
+/*hover dropdown start*/
+.dropdown {
+  /* Border */
+  display: flex;
+
+  /* Reset list styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  li {
+    /* Spacing */
+    padding: 8px;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+    z-index: 1;
+  }
+  ul {
+    background: white;
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+
+    /* Width */
+    min-width: 260px;
+    z-index: 1;
+  }
+  ul ul {
+    left: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+  }
+  li:hover > ul {
+    display: block;
+    z-index: 1;
+  }
+}
+.grow .grow-1{
+  min-width: 800px;
+  right: auto;
+  left: 40%;
+  transform: translate(-40%, 0);
+  z-index: 1;
+  line-height: 2.5;
+}
+/*hover dropdowns end*/
+
+/* my boostramp class start */
+.display-7 {
+  font-size: 28px;
+}
+.display-8 {
+  font-size: 24px;
+}
+.display-9 {
+  font-size: 14px;
+}
+.display-10 {
+  font-size: 10px;
+}
+.bg-orange{
+  background: #FF4C3B;
+}
+.text-orange {
+  color: #FF4C3B;
+}
+.hover-text-orange:hover {
+  color: #FF4C3B;
+  transition: 0.3s;
+}
+.raiting{
+  color: #FFA200;
+}
+.color_circles{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 5px;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.color_circles1{
+  background: #d0edff;
+}
+.color_circles2{
+  background: #f1e7e6;
+}
+.color_circles3{
+  background: #bfbfbf;
+}
+.me-10 {
+  margin-right: 500px;
+}
+
+
+
+/* my boostramp class end */
+
