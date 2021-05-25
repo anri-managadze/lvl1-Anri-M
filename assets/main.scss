@@ -15,7 +15,7 @@ ul{
 .menu_logo{
   padding: 30px 0;
 }
-.menu_logo, .save_banner, .spec_text, .spec_card, .excl_text, .excl_card, .offer_card, .foot_first_line, .foot_second_line, .foot_third_line, .welcome_text, .logo_whowear{
+.menu_logo, .save_banner, .spec_text, .spec_card, .excl_text, .excl_card, .offer_card, .foot_first_line, .foot_second_line, .foot_third_line, .welcome_text, .logo_whowear, .coll_banner, .main_container{
   width:85%;
   margin: 0 auto;
 }
@@ -125,6 +125,7 @@ footer {
 }
 .raiting{
   color: #FFA200;
+  letter-spacing: 3px;
 }
 .color_circles{
   display: inline-block;
@@ -148,7 +149,8 @@ footer {
   margin-right: 500px;
 }
 
-
-
 /* my boostramp class end */
 
+/*ecommerce start*/
+
+/*ecommerce end*/

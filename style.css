@@ -383,6 +383,15 @@ legend + * {
   clear: left;
 }
 
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+  padding: 0;
+}
 
 ::-webkit-inner-spin-button {
   height: auto;
@@ -409,7 +418,9 @@ legend + * {
   padding: 0;
 }
 
-
+::file-selector-button {
+  font: inherit;
+}
 
 ::-webkit-file-upload-button {
   font: inherit;
@@ -2176,6 +2187,28 @@ progress {
   background-color: #e9ecef;
   opacity: 1;
 }
+.form-control::file-selector-button {
+  padding: 0.375rem 0.75rem;
+  margin: -0.375rem -0.75rem;
+  margin-inline-end: 0.75rem;
+  color: #212529;
+  background-color: #e9ecef;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control::file-selector-button {
+    transition: none;
+  }
+}
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: #dde0e3;
+}
 .form-control::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
@@ -2221,7 +2254,11 @@ progress {
   font-size: 0.875rem;
   border-radius: 0.2rem;
 }
-
+.form-control-sm::file-selector-button {
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  margin-inline-end: 0.5rem;
+}
 .form-control-sm::-webkit-file-upload-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
@@ -2234,7 +2271,11 @@ progress {
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
-
+.form-control-lg::file-selector-button {
+  padding: 0.5rem 1rem;
+  margin: -0.5rem -1rem;
+  margin-inline-end: 1rem;
+}
 .form-control-lg::-webkit-file-upload-button {
   padding: 0.5rem 1rem;
   margin: -0.5rem -1rem;
@@ -2259,7 +2300,10 @@ textarea.form-control-lg {
 .form-control-color:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-
+.form-control-color::-moz-color-swatch {
+  height: 1.5em;
+  border-radius: 0.25rem;
+}
 .form-control-color::-webkit-color-swatch {
   height: 1.5em;
   border-radius: 0.25rem;
@@ -3916,7 +3960,10 @@ textarea.form-control-lg {
   background-size: 100%;
 }
 
-
+.navbar-nav-scroll {
+  max-height: var(--bs-scroll-height, 75vh);
+  overflow-y: auto;
+}
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
@@ -4427,6 +4474,7 @@ textarea.form-control-lg {
   float: left;
   padding-right: 0.5rem;
   color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 .breadcrumb-item.active {
   color: #6c757d;
@@ -10698,7 +10746,7 @@ ul li {
   padding: 30px 0;
 }
 
-.menu_logo, .save_banner, .spec_text, .spec_card, .excl_text, .excl_card, .offer_card, .foot_first_line, .foot_second_line, .foot_third_line, .welcome_text, .logo_whowear {
+.menu_logo, .save_banner, .spec_text, .spec_card, .excl_text, .excl_card, .offer_card, .foot_first_line, .foot_second_line, .foot_third_line, .welcome_text, .logo_whowear, .coll_banner, .main_container {
   width: 85%;
   margin: 0 auto;
 }
@@ -10812,6 +10860,7 @@ footer {
 
 .raiting {
   color: #FFA200;
+  letter-spacing: 3px;
 }
 
 .color_circles {
@@ -10841,5 +10890,7 @@ footer {
 }
 
 /* my boostramp class end */
+/*ecommerce start*/
+/*ecommerce end*/
 
 /*# sourceMappingURL=style.css.map */

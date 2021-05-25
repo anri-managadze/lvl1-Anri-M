@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel = "icon" href ="http://themes.pixelstrap.com/multikart/assets/images/favicon/1.png" type = "image/x-icon">
+    <title>Ecommerce</title>
+</head>
+<body>
+<div class="container-fluid p-0">
+  <header>
+    <!-- First line welcome, number, account start-->
+    <div class="row d-none d-md-flex pt-3 pb-3 bg-light">
+      <div class="welcome_text d-flex flex-row align-items-center text-secondary display-9">
+        <div class="d-flex col-3">Welcome to Our store Multikart</div>
+        <div class="col-7"><i class="fas fa-phone-alt text-orange me-2"></i>Call Us: 123 - 456 - 7890</div>
+        <div class="d-flex col-2 justify-content-end">
+          <div><i class="fas fa-heart  me-4 hover-text-orange"></i></div>
+          <div><a href="#" class="text-secondary"><i class="fas fa-user me-2 hover-text-orange"></i>My Account</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- First line welcome, number, account end-->
+
+    <!-- second line menu, logo, nav, search, setting, cart start-->
+    <div class="d-flex flex-row justify-content-between align-items-center menu_logo">
+      <!--burger menu left start -->
+      <div class="col-2 col-md-1 ">
+        <button class="bg-white border-0 display-7" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i></button>
+        <div class="offcanvas offcanvas-start " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header border-bottom pt-4 pb-4 ">
+            <button type="button" class="border-0 bg-white " data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-chevron-left"></i> BACK</button>
+          </div>
+          <div class="offcanvas-body mt-5">
+            <ul>
+              <li class="hover-text-orange">CLOSING<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+              <li class="hover-text-orange">BAGS<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+              <li class="hover-text-orange">FOOTWEAR<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+              <li class="hover-text-orange">WATCHES</li>
+              <li class="hover-text-orange">ACCESSORIES<i class="fas fa-chevron-right  float-end display-10 mt-4"></i></li>
+              <li class="hover-text-orange">HOUSE OF DESIGN</li>
+              <li class="hover-text-orange">BEAUTY&PERSONAL CARE<i class="fas fa-chevron-right float-end display-10 mt-4"></i></li>
+              <li class="hover-text-orange">HOME&DECOR</li>
+              <li class="hover-text-orange">KITCHEN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--burger menu left end -->
+
+      <div class="col-8 text-center col-md-2 "><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo" id="reload" ></div>
+      <div class="d-none d-md-flex col-md-6 justify-content-between ms-5 nav_header">
+        <!--dropdown start -->
+        <ul class="dropdown"><li><div class="hover-text-orange">HOME</div></li></ul>
+        <ul class="dropdown grow">
+          <li>
+            <div class="hover-text-orange">FEATURE<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+            <!-- First level sub dropdown -->
+            <ul class="grow-1 row">
+              <div class="d-flex justify-content-between">
+                <li >
+                  <div class="fw-bold mb-1">Add Cart</div>
+                  <div>Cart Modal Popup</div>
+                  <div>Qty. Counter<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                  <div>Cart Top</div>
+                  <div>Cart Bottom</div>
+                  <div>Cart Left</div>
+                  <div>Cart Right</div>
+                </li>
+                <li >
+                  <div class="fw-bold mb-1">Model</div>
+                  <div>Exit<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                  <div>Christmas</div>
+                  <div>Black Friday</div>
+                  <div>Cyber Monday</div>
+                  <div>New Year</div>
+                </li>
+                <li >
+                  <div class="fw-bold mb-1">Cookie Bar</div>
+                  <div>Bottom<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                  <div>Bottom Left</div>
+                  <div>Bottom Right</div>
+                  <div class="fw-bold mb-1">Search</div>
+                  <div>Ajax Search<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                </li>
+                <li >
+                  <div class="fw-bold mb-1">Invoice template</div>
+                  <div>Invoice 1</div>
+                  <div>Invoice 2</div>
+                  <div>Invoice 3</div>
+                  <div>Invoice 4</div>
+                  <div>Invoice 5</div>
+                </li>
+                <li >
+                  <div class="fw-bold mb-1" >Email Template</div>
+                  <div>Order Success</div>
+                  <div>Order Success 2</div>
+                  <div>Email Template</div>
+                  <div>Email Template 2</div>
+                  <div class="fw-bold mb-1">Elements</div>
+                  <div>Elements Pages<i class="ms-2 fa fa-bolt icon-trend text-orange display-10" aria-hidden="true"></i></div>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="dropdown">
+          <li>
+            <div class="hover-text-orange">SHOP<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+            <!-- First level sub dropdown -->
+            <ul>
+              <li>Top Filter<span class="text-orange ms-1">New</span></li>
+              <li>Modern<span class="text-orange ms-1">New</span></li>
+              <li>Left Sidebar</li>
+              <li>Right Sidebar</li>
+              <li>No Sidebar</li>
+              <li>Sidebar Popup</li>
+              <li>Metro</li>
+              <li>Full Width</li>
+              <li>Infinite Scroll</li>
+              <li>Input</li>
+              <li>Three Grid</li>
+              <li>List View</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="dropdown">
+          <li>
+            <div class="hover-text-orange">PRODUCT<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+            <!-- First level sub dropdown -->
+            <ul>
+              <li>360 View<span class="text-orange ms-1">New</span></li>
+              <li>video thumbnail<span class="text-orange ms-1">New</span></li>
+              <li>
+                <div>Sidebar<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                <!-- Second level sub dropdown -->
+                <ul>
+                  <li>Left Sidebar</li>
+                  <li>Right Sidebar</li>
+                  <li>No Sidebar</li>
+                </ul>
+              </li>
+              <li>
+                <div>Thumbnail Image<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                <!-- Second level sub dropdown -->
+                <ul>
+                  <li>Left Image</li>
+                  <li>Right Image</li>
+                  <li>Image Outside</li>
+                </ul>
+              </li>
+              <li>
+                <div>Three Column<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                <!-- Second level sub dropdown -->
+                <ul>
+                  <li>Thumbnail Left</li>
+                  <li>Thumbnail Right</li>
+                  <li>Thubnail Bottom</li>
+                </ul>
+              </li>
+              <li>Four image</li>
+              <li>Sticky</li>
+              <li>Accordian</li>
+              <li>Bundle</li>
+              <li>Image Swatch</li>
+              <li>Vertical Tab</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="dropdown">
+          <li>
+            <div class="hover-text-orange">PAGES<i class="fas fa-chevron-down ms-2 display-10 mt-2"></i></div>
+            <!-- First level sub dropdown -->
+            <ul>
+              <li>
+                <div>Vendor Dashboard<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                <!-- Second level sub dropdown -->
+                <ul>
+                  <li>Vendor Dashboard</li>
+                  <li>Vendor Profile</li>
+                  <li>Become Vendor</li>
+                </ul>
+              </li>
+              <li>
+                <div>Account<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                <!-- Second level sub dropdown -->
+                <ul>
+                  <li>Wishlist</li>
+                  <li>Cart</li>
+                  <li>Dashboard</li>
+                </ul>
+              </li>
+              <li>
+                <div>Portfolio<i class="fas fa-chevron-right float-end display-10 mt-2"></i></div>
+                <!-- Second level sub dropdown -->
+                <ul>
+                  <li>Grid</li>
+                  <li>Masonry</li>
+                </ul>
+              </li>
+              <li>about us</li>
+              <li>search</li>
+              <li>compare</li>
+              <li>collectio</li>
+              <li>site map</li>
+              <li>404</li>
+              <li>coming soon</li>
+              <li>FAQ</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="dropdown">
+          <li>
+            <div class="hover-text-orange">BLOG<i class="fas fa-chevron-down ms-2 display-10"></i></div>
+            <!-- First level sub dropdown -->
+            <ul>
+              <li>Left Sidebar</li>
+              <li>Right Sidebar</li>
+              <li>No Sidebar</li>
+              <li>Blog Details</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--dropdown end -->
+
+      <!--setting and cart dropdown start-->
+      <div class=" d-md-flex d-none justify-content-end col-md-2 ">
+        <ul class="dropdown">
+          <li><i class="fas fa-search display-8 ms-3"></i></li>
+          <li>
+            <div><i class="fas fa-cog display-8 ms-3"></i></div>
+            <ul style="width: 100px">
+              <li class="p-0 fw-bold">Language</li>
+              <li>English</li>
+              <li>French</li>
+              <li class="p-0 fw-bold">Currency</li>
+              <li>Euro</li>
+              <li>Pound</li>
+              <li>Dollar</li>
+            </ul>
+          </li>
+          <li><i class="fas fa-shopping-bag display-8 ms-3"></i></li>
+        </ul>
+      </div>
+      <!--setting and cart dropdown end-->
+
+      <!--burger menu right start -->
+      <button class="bg-white border-0 display-7 d-flex d-md-none col-2 justify-content-end " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars text-orange"></i></button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header pt-4 pb-4 border-bottom d-flex justify-content-end">
+          <button type="button" class="bg-white border-0 " data-bs-dismiss="offcanvas" aria-label="Close">Back <i class="fas fa-chevron-right"></i> </button>
+        </div>
+        <div class="offcanvas-body mt-5 me-2 d-flex flex-column align-content-between">
+          <ul>
+            <li class="hover-text-orange">HOME<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+            <li class="hover-text-orange">FEATURE<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+            <li class="hover-text-orange">SHOP<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+            <li class="hover-text-orange">PRODUCT<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+            <li class="hover-text-orange">PAGES<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+            <li class="hover-text-orange">BLOG<i class="fas fa-plus display-10 float-end mt-3"></i></li>
+          </ul>
+        </div>
+      </div>
+      <!--burger menu right end -->
+      <!-- second line menu, logo, nav, search, setting, cart end-->
+    </div>
+  </header>
+  <main>
+    <div class="row bg-light pt-5 pb-5">
+      <div class="coll_banner d-flex justify-content-between">
+        <div class="fw-bold">COLLECTION</div>
+        <div class="text-secondary"><a href="#" class="text-dark">HOME</a> / COLLECTION</div>
+      </div>
+    </div>
+    <div class="main_container row mt-5">
+      <!--navigation start-->
+      <div class="d-none d-md-block" style="width: 25%">
+        <nav class="ecom_nav d-flex flex-column justify-content-between bg-light p-4" style="height: 370px">
+          <div>BRAND</div>
+          <div>COLORS</div>
+          <div>SIZE</div>
+          <div>PRICE</div>
+          <div style="width: 80%"><input type="range" class="form-range" id="customRange1"></div>
+        </nav>
+        <!--navigation end-->
+
+        <!--new product start-->
+      <div class="mt-4 ">
+        <h5 class="border-bottom">NEW PRODUCT</h5>
+
+      <div class="row-12 d-flex mt-4">
+        <div class="col-4">
+          <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/1.jpg" alt="img" class="img-fluid">
+        </div>
+        <div class="col-8 p-3">
+          <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <div class="text-secondary">Slim Fit Cotton Shirt</div>
+          <div class="fw-bold display-8">$100</div>
+        </div>
+      </div>
+
+        <div class="row-12 d-flex mt-4">
+          <div class="col-4">
+            <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/011.jpg" alt="img" class="img-fluid">
+          </div>
+          <div class="col-8 p-3">
+            <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <div class="text-secondary">Slim Fit Cotton Shirt</div>
+            <div class="fw-bold display-8">$100</div>
+          </div>
+        </div>
+
+        <div class="row-12 d-flex mt-4">
+          <div class="col-4">
+            <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/16.jpg" alt="img"  class="img-fluid">
+          </div>
+          <div class="col-8 p-3">
+            <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <div class="text-secondary">Slim Fit Cotton Shirt</div>
+            <div class="fw-bold display-8">$100</div>
+          </div>
+        </div>
+
+      </div>
+        <!--new product end-->
+
+        <!--navbanner start-->
+        <a href=""><div class="mt-4" style="background-image: url(https://themes.pixelstrap.com/multikart/assets/images/side-banner.png); background-position: center center; background-size: cover; width: 100%; height: 400px;"></div></a>
+        <!--navbanner end-->
+    </div>
+
+      <div class="col-12 col-md-9">
+        <!--bodybanner start-->
+        <a href=""><img src="https://themes.pixelstrap.com/multikart/assets/images/mega-menu/2.jpg" class="img-fluid"></a>
+        <h5 class="mt-3">BIGGEST DEALS ON TOP BRANDS</h5>
+        <p class="mt-3 text-secondary">The trick to choosing the best wear for yourself is to keep in mind your body type, individual style, occasion and also the time of day or weather. In addition to eye-catching products from top brands, we also offer an easy 30-day return and exchange policy, free and fast shipping across all pin codes, cash or card on delivery option, deals and discounts, among other perks. So, sign up now and shop for westarn wear to your heart’s content on Multikart.</p>
+        <!--bodybanner end-->
+
+        <!--protuct body top start-->
+        <div class="row border"><p class="text-center mt-3">Showing Products 1-24 Of 10 Result</p></div>
+        <div class="row border pt-3 pb-3">
+          <div class="col-4 d-flex justify-content-between border-end">
+              <div>
+                <i class="fas fa-th ms-2"></i>
+                <i class="fas fa-list ms-2"></i>
+              </div>
+            <div class="d-flex">
+              <div class="ms-2 text-orange"><i class="fas fa-grip-lines-vertical"></i></div>
+              <div class="ms-2 text-orange"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i></div>
+              <div class="ms-2 text-orange"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i></div>
+            </div>
+          </div>
+          <div class="col-4 border-end">24</div>
+          <div class="col-4 ">sorting</div>
+        </div>
+        <!--protuct body top end-->
+
+        <!--protuct body main start-->
+
+        <!--protuct body main end-->
+
+        <!--protuct body bottom start-->
+        <div class="row border pt-3">
+        <nav aria-label="Page navigation example" class="text-secondary col-12 col-md-4 border-end">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link <ul text-secondary" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link <ul text-secondary" href="#">1</a></li>
+            <li class="page-item"><a class="page-link <ul text-secondary" href="#">2</a></li>
+            <li class="page-item"><a class="page-link <ul text-secondary" href="#">3</a></li>
+            <li class="page-item"><a class="page-link <ul text-secondary" href="#">Next</a></li>
+          </ul>
+        </nav>
+          <div class="col-md-4 border-end"></div>
+          <p class="col-12 col-md-4 pt-1 text-secondary d-flex justify-content-end ">Showing Products 1-24 of 10 Result</p>
+        </div>
+        <!--protuct body bottom end -->
+
+      </div>
+    </div>
+  </main>
+  <footer class="text-secondary mt-5te">
+    <!-- footer first line start -->
+    <div class="row mt-5 foot_first_line justify-content-between border-bottom">
+      <div class="col-md-5 mt-5">
+        <p>KNOW IT ALL FIRST!</p>
+        <p>Never Miss Anything From Multikart By Signing Up To Our Newsletter.</p>
+      </div>
+      <div class="d-flex col-md-5 mt-5">
+        <label>
+          <input type="email" class="border-0 " placeholder="Email" style="width:240px; height:45px">
+        </label>
+        <button style="width:140px; height:45px" class="border-0 bg-orange text-light ms-3">Subscribe</button>
+      </div>
+    </div>
+    <!-- footer first line end-->
+
+    <!-- footer second line start-->
+    <div class="row mt-5 d-flex foot_second_line">
+      <div class="d-flex flex-column col-12 col-md-5 ">
+        <img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo" class="w-50 ">
+        <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+        <div class="col-7 d-flex justify-content-between mt-5">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-google-plus"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram-square"></i>
+          <i class="fas fa-wifi"></i>
+        </div>
+      </div>
+      <div class=" col-12 col-md-2 mt-3">
+        <div>MY ACCOUNT</div>
+        <div class="d-flex flex-column">
+          <a href="#">Mens</a>
+          <a href="#">Womens</a>
+          <a href="#">Clothing</a>
+          <a href="#">Accessories</a>
+          <a href="#">Featured</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-2 mt-3">
+        <div>WHY WE CHOOSE</div>
+        <div class="d-flex flex-column">
+          <a href="#">Shipping & Return</a>
+          <a href="#">Secure Shopping</a>
+          <a href="#">Gallary</a>
+          <a href="#">Affiliates</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 mt-3">
+        <div>STORE INFORMATION</div>
+        <div class="row">
+          <div class="col-2 a"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="col-10 a">Multikart Demo Store, Demo Store India 345-659</div>
+        </div>
+        <div class="row">
+          <div class="col-2 a"><i class=" fas fa-phone-alt"></i></div>
+          <div class="col-10 a">Call Us: 123-456-7898</div>
+        </div>
+        <div class="row">
+          <div class="col-2 a"><i class="fas fa-envelope-open"></i></div>
+          <div class="col-10 a">Email Us: <a href="#">Support@Fiot.Com</a></div>
+        </div>
+        <div class="row">
+          <div class="col-2 a"><i class="fas fa-fax"></i></div>
+          <div class="col-10 a">Fax : 12345678</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer second line end-->
+    <!-- footer third line start-->
+    <div class="row foot_third_line">
+      <div class="col col-12 col-md-6 mt-3">&#169;2021 themeforest powered by pixelstrap</div>
+      <div class="col d-flex justify-content-end  col-12 col-md-6 mt-3">
+        <a href="#" class="me-4"><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/visa.png" alt=""></a>
+        <a href="#" class="me-4"><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/mastercard.png" alt=""></a>
+        <a href="#" class="me-4"><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/paypal.png" alt=""></a>
+        <a href="#" class="me-4"><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/american-express.png" alt=""></a>
+        <a href="#"><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/discover.png" alt=""></a>
+      </div>
+    </div>
+    <!-- footer third line end-->
+  </footer>
+</div >
+</body>
+</html>
