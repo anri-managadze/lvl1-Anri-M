@@ -10891,6 +10891,35 @@ footer {
 
 /* my boostramp class end */
 /*ecommerce start*/
+#output {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#output div {
+  width: 200px;
+  margin-top: 10px;
+}
+#output div .star {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+#output div h5 {
+  margin-top: 20px;
+  font-size: 15px;
+}
+#output div h4 {
+  margin-top: 20px;
+  font-size: 15px;
+  float: bottom;
+}
+#output div img {
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+}
+
 /*ecommerce end*/
 
 /*# sourceMappingURL=main.css.map */

@@ -152,5 +152,35 @@ footer {
 /* my boostramp class end */
 
 /*ecommerce start*/
+#output {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
+  div {
+    width: 200px;
+    margin-top: 10px;
+
+    .star {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+    }
+    h5{
+      margin-top: 20px;
+      font-size: 15px;
+    }
+    h4{
+      margin-top: 20px;
+      font-size: 15px;
+      float: bottom;
+    }
+
+  img {
+      width: 150px;
+      height: 200px;
+      border-radius: 15px;
+    }
+  }
+}
 /*ecommerce end*/
