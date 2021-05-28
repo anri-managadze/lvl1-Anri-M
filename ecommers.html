@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="script.js" defer></script>
     <link rel = "icon" href ="http://themes.pixelstrap.com/multikart/assets/images/favicon/1.png" type = "image/x-icon">
     <title>Ecommerce</title>
 </head>
 <body>
-<div class="container-fluid p-0">
+<div class="container-fluid p-0 m-0">
   <header>
     <!-- First line welcome, number, account start-->
-    <div class="row d-none d-md-flex pt-3 pb-3 bg-light">
+    <div class="row d-none d-md-flex pt-3 pb-3 bg-light me-0">
       <div class="welcome_text d-flex flex-row align-items-center text-secondary display-9">
         <div class="d-flex col-3">Welcome to Our store Multikart</div>
         <div class="col-7"><i class="fas fa-phone-alt text-orange me-2"></i>Call Us: 123 - 456 - 7890</div>
@@ -50,7 +51,7 @@
       </div>
       <!--burger menu left end -->
 
-      <div class="col-8 text-center col-md-2 "><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo" id="reload" ></div>
+      <div class="col-8 text-center col-md-2 pointer"><img src="http://themes.pixelstrap.com/multikart/assets/images/icon/logo.png" alt="logo" id="reload" ></div>
       <div class="d-none d-md-flex col-md-6 justify-content-between ms-5 nav_header">
         <!--dropdown start -->
         <ul class="dropdown"><li><div class="hover-text-orange">HOME</div></li></ul>
@@ -271,7 +272,7 @@
     </div>
   </header>
   <main>
-    <div class="row bg-light pt-5 pb-5">
+    <div class="row bg-light pt-4 pb-4 me-0">
       <div class="coll_banner d-flex justify-content-between">
         <div class="fw-bold">COLLECTION</div>
         <div class="text-secondary"><a href="#" class="text-dark">HOME</a> / COLLECTION</div>
@@ -279,61 +280,157 @@
     </div>
     <div class="main_container row mt-5">
       <!--navigation start-->
-      <div class="d-none d-md-block" style="width: 25%">
-        <nav class="ecom_nav d-flex flex-column justify-content-between bg-light p-4" style="height: 370px">
-          <div>BRAND</div>
-          <div>COLORS</div>
-          <div>SIZE</div>
-          <div>PRICE</div>
-          <div style="width: 80%"><input type="range" class="form-range" id="customRange1"></div>
-        </nav>
+      <div class="d-none d-md-block " style="width: 25%">
+
+        <div class="p-0 m-0 bg-light">
+          <nav>
+            <ul class="drop-down closed">
+              <li><div class="nav-button text-secondary d-block">BRAND</div></li>
+              <li><input type="checkbox" id="zara"><label for="zara">ZARA</label> </li>
+              <li><input type="checkbox" id="veramoda"><label for="veramoda">VERA-MODA</label> </li>
+              <li><input type="checkbox" id="forever"><label for="forever">VOREVER-21</label> </li>
+              <li><input type="checkbox" id="roadster"><label for="roadster">ROADSTER</label> </li>
+              <li><input type="checkbox" id="only"><label for="only">ONLY</label> </li>
+            </ul>
+          </nav>
+          <nav class="mt-4">
+            <ul class="drop-down color">
+              <li><div class="color-button text-secondary d-block">COLORS</div></li>
+              <div class="d-flex flex-wrap">
+              <li class="round"><input type="checkbox" id="checkbox1" /><label for="checkbox1"></label></li>
+              <li class="round"><input type="checkbox" id="checkbox2" /><label for="checkbox2"></label></li>
+              <li class="round"><input type="checkbox" id="checkbox3" /><label for="checkbox3"></label> </li>
+              <li class="round"><input type="checkbox" id="checkbox4" /><label for="checkbox4"></label> </li>
+              <li class="round"><input type="checkbox" id="checkbox5" /><label for="checkbox5"></label> </li>
+              <li class="round"><input type="checkbox" id="checkbox6" /><label for="checkbox6"></label> </li>
+              <li class="round"><input type="checkbox" id="checkbox7" /><label for="checkbox7"></label> </li>
+              </div>
+            </ul>
+          </nav>
+            <nav class="mt-4">
+              <ul class="drop-down size">
+                <li><div class="size-button text-secondary d-block">SIZE</div></li>
+                <li><input type="checkbox" id="s"><label for="s">S</label> </li>
+                <li><input type="checkbox" id="m"><label for="m">M</label> </li>
+                <li><input type="checkbox" id="l"><label for="l">L</label> </li>
+                <li><input type="checkbox" id="xl"><label for="xl">XL</label> </li>
+              </ul>
+            </nav>
+          <nav class="mt-4">
+            <ul class="drop-down price">
+              <li><div class="price-button text-secondary d-block">PRICE</div></li>
+              <li><div class="price-range-slider">
+                <p class="range-value">
+                  <input type="text" id="amount" readonly>
+                </p>
+                <div id="slider-range" class="range-bar"></div>
+              </div>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
         <!--navigation end-->
 
         <!--new product start-->
       <div class="mt-4 ">
-        <h5 class="border-bottom">NEW PRODUCT</h5>
+        <h5 class="border-bottom ">NEW PRODUCT</h5>
 
-      <div class="row-12 d-flex mt-4">
-        <div class="col-4">
-          <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/1.jpg" alt="img" class="img-fluid">
-        </div>
-        <div class="col-8 p-3">
-          <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-          <div class="text-secondary">Slim Fit Cotton Shirt</div>
-          <div class="fw-bold display-8">$100</div>
-        </div>
-      </div>
+        <!--slider new product end -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
 
-        <div class="row-12 d-flex mt-4">
-          <div class="col-4">
-            <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/011.jpg" alt="img" class="img-fluid">
-          </div>
-          <div class="col-8 p-3">
-            <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-            <div class="text-secondary">Slim Fit Cotton Shirt</div>
-            <div class="fw-bold display-8">$100</div>
-          </div>
-        </div>
+              <div class="row-12 d-flex mt-4">
+                <div class="col-4">
+                  <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/16.jpg" alt="img"  class="img-fluid">
+                </div>
+                <div class="col-8 p-3">
+                  <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                  <div class="text-secondary display-9">Slim Fit Cotton Shirt</div>
+                  <div class="fw-bold display-8">$100</div>
+                </div>
+              </div>
 
-        <div class="row-12 d-flex mt-4">
-          <div class="col-4">
-            <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/16.jpg" alt="img"  class="img-fluid">
-          </div>
-          <div class="col-8 p-3">
-            <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-            <div class="text-secondary">Slim Fit Cotton Shirt</div>
-            <div class="fw-bold display-8">$100</div>
-          </div>
-        </div>
+              <div class="row-12 d-flex mt-4">
+                <div class="col-4">
+                  <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/011.jpg" alt="img" class="img-fluid">
+                </div>
+                <div class="col-8 p-3">
+                  <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                  <div class="text-secondary display-9">Slim Fit Cotton Shirt</div>
+                  <div class="fw-bold display-8">$40</div>
+                </div>
+              </div>
 
+              <div class="row-12 d-flex mt-4">
+                <div class="col-4">
+                  <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/1.jpg" alt="img" class="img-fluid">
+                </div>
+                <div class="col-8 p-3">
+                  <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                  <div class="text-secondary display-9">Slim Fit Cotton Shirt</div>
+                  <div class="fw-bold display-8">$150</div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+
+              <div class="row-12 d-flex mt-4">
+                <div class="col-4">
+                  <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/001.jpg" alt="img"  class="img-fluid">
+                </div>
+                <div class="col-8 p-3">
+                  <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                  <div class="text-secondary display-9">Slim Fit Cotton Shirt</div>
+                  <div class="fw-bold display-8">$200</div>
+                </div>
+              </div>
+
+              <div class="row-12 d-flex mt-4">
+                <div class="col-4">
+                  <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/4.jpg" alt="img" class="img-fluid">
+                </div>
+                <div class="col-8 p-3">
+                  <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                  <div class="text-secondary display-9">Slim Fit Cotton Shirt</div>
+                  <div class="fw-bold display-8">$400</div>
+                </div>
+              </div>
+
+              <div class="row-12 d-flex mt-4">
+                <div class="col-4">
+                  <img src="https://themes.pixelstrap.com/multikart/assets/images/fashion/pro/19.jpg" alt="img" class="img-fluid">
+                </div>
+                <div class="col-8 p-3">
+                  <div class="raiting display-9"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                  <div class="text-secondary display-9">Slim Fit Cotton Shirt</div>
+                  <div class="fw-bold display-8">$50</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--slider new product end -->
       </div>
         <!--new product end-->
 
         <!--navbanner start-->
         <a href=""><div class="mt-4" style="background-image: url(https://themes.pixelstrap.com/multikart/assets/images/side-banner.png); background-position: center center; background-size: cover; width: 100%; height: 400px;"></div></a>
         <!--navbanner end-->
-    </div>
 
+      </div>
       <div class="col-12 col-md-9">
         <!--bodybanner start-->
         <a href=""><img src="https://themes.pixelstrap.com/multikart/assets/images/mega-menu/2.jpg" class="img-fluid"></a>
@@ -341,29 +438,66 @@
         <p class="mt-3 text-secondary">The trick to choosing the best wear for yourself is to keep in mind your body type, individual style, occasion and also the time of day or weather. In addition to eye-catching products from top brands, we also offer an easy 30-day return and exchange policy, free and fast shipping across all pin codes, cash or card on delivery option, deals and discounts, among other perks. So, sign up now and shop for westarn wear to your heart’s content on Multikart.</p>
         <!--bodybanner end-->
 
-        <!--protuct body top start-->
-        <div class="row border"><p class="text-center mt-3">Showing Products 1-24 Of 10 Result</p></div>
-        <div class="row border pt-3 pb-3">
-          <div class="col-4 d-flex justify-content-between border-end">
-              <div>
-                <i class="fas fa-th ms-2" id="many"></i>
-                <i class="fas fa-list ms-2"></i>
-              </div>
-            <div class="d-flex">
-              <div class="ms-2 text-orange"><i class="fas fa-grip-lines-vertical"></i></div>
-              <div class="ms-2 text-orange"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i></div>
-              <div class="ms-2 text-orange"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i></div>
+        <!--filter button menu start-->
+        <div class="row ">
+          <a class="col-3 d-block d-md-none border-0 text-light bg-orange text-center pt-2 pb-2 " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fas fa-filter text-light "></i>FILTER
+          </a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="border-0 bg-white " data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-chevron-left"></i> BACK</button>
+            </div>
+            <div class="offcanvas-body">
+                  <nav>
+                    <ul>
+                      <li>BRAND</li>
+                      <li>COLOR</li>
+                      <li>SIZE</li>
+                      <li>PRICE</li>
+                    </ul>
+                    <a href=""><div class="mt-4" style="background-image: url(https://themes.pixelstrap.com/multikart/assets/images/side-banner.png); background-position: center center; background-size: cover; width: 100%; height: 400px;"></div></a>
+                  </nav>
             </div>
           </div>
-          <div class="col-4 border-end">
 
+        </div>
+
+        <!--filter button menu end-->
+
+        <!--protuct body top start-->
+        <div class="row border mt-4"><p class="text-center mt-3">Showing Products 1-24 Of 10 Result</p></div>
+        <div class="row border pt-3 pb-3">
+          <div class="d-none d-md-flex col-4 justify-content-between border-end">
+              <div>
+                <i class="fas fa-th ms-2 " role="button" id="result_btn_1"></i>
+                <i class="fas fa-list ms-2" role="button" id="result_btn_2"></i>
+              </div>
+            <div class="d-flex">
+              <div class="ms-2 text-orange" role="button" id="result_btn_3"><i class="fas fa-grip-lines-vertical"></i></div>
+              <div class="ms-2 text-orange" role="button" id="result_btn_4"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i></div>
+              <div class="ms-2 text-orange" role="button" id="result_btn_5"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-grip-lines-vertical"></i></div>
+            </div>
           </div>
-          <div class="col-4 ">sorting</div>
+          <div class="col-12 col-md-4 border-end ">
+            <select name="par-product" id="par-select" class="w-100 border-0 pointer">
+              <option value="0">Products Par Page</option>
+              <option value="10">10 Products Par Page</option>
+              <option value="15">15 Products Par Page</option>
+              <option value="20">20 Products Par Page</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-4">
+            <select name="sort-product" id="sort-select" class="w-100 border-0 pointer">
+              <option value="">Sorting Items</option>
+              <option value="15">15 Products</option>
+              <option value="20">20 Products</option>
+            </select>
+          </div>
         </div>
         <!--protuct body top end-->
 
         <!--protuct body main start-->
-        <div id="output"></div>
+        <div id="output" class="row d-flex justify-content-between w-100 mt-3 spec_card"></div>
         <!--protuct body main end-->
 
         <!--protuct body bottom start-->
@@ -384,6 +518,7 @@
 
       </div>
     </div>
+
   </main>
   <footer class="text-secondary mt-5te">
     <!-- footer first line start -->
