@@ -10906,7 +10906,8 @@ footer {
 /*checkbox start*/
 nav .drop-down {
   overflow: hidden;
-  transition: height 0.3s ease;
+  height: 160px;
+  transition: height 0.4s ease;
   padding: 10px;
 }
 
