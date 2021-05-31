@@ -3,7 +3,9 @@ document.querySelector('#reload').addEventListener('click', function (){location
 /*  fetch scripts start */
 let limits=document.querySelector('#par-select').value;
 let descs=document.querySelector('#sort-select').value;
-function prodFetch(limit,desc,col) {
+let rows = document.querySelector("#output");
+
+function prodFetch(limit,desc) {
     const url = `https://fakestoreapi.com/products?limit=${limit}&sort=${desc}`;
     fetch(url)
         .then(resp => resp.json())
@@ -21,8 +23,8 @@ function prodFetch(limit,desc,col) {
             let tmp = ``;
             for(let i=0; i< result.length; i++) {
                 tmp+=` 
-            <div class=${col}>
-                <img src="${result[i].image}" class="card-img-top " style="height: 200px;width: 180px" alt="...">
+            <div class='col'>
+                <img src="${result[i].image}" class="card-img-top img-fluid" alt="...">
                 <div class="card-body ">
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="product display-9 text-secondary">${result[i].title}</h5>
@@ -39,54 +41,57 @@ function prodFetch(limit,desc,col) {
             document.getElementById('output').innerHTML+=tmp;
         })
 }
-    prodFetch(limit=limits,desc=descs,'col-md-3');
+
 
 function clearBody() {
     document.getElementById('output').innerHTML='';
 }
+function product(row){
+    clearBody();
+    prodFetch();
+    rows.className=` ${row}`;
+}
+
+product('row row-cols-2 row-cols-md-4');
 
 document.getElementById('result_btn_1').addEventListener('click',(e)=>{
     e.preventDefault();
-    clearBody();
-    prodFetch(limit=limits,desc=descs,'col-md-3');
+    product('row row-cols-1 row-cols-md-4');
 });
 
 document.getElementById('result_btn_2').addEventListener('click',(e)=>{
     e.preventDefault();
-    clearBody();
-    prodFetch(limit=limits,desc=descs,'col-12');
+    product('row row-cols-1');
 });
 
 document.getElementById('result_btn_3').addEventListener('click',(e)=>{
     e.preventDefault();
-    clearBody();
-    prodFetch(limit=limits,desc=descs,'col-md-6');
+    product('row row-cols-2');
 });
 
 document.getElementById('result_btn_4').addEventListener('click',(e)=>{
     e.preventDefault();
-    clearBody();
-    prodFetch(limit=limits,desc=descs,'col-md-4');
+
+    product('row row-cols-3');
 });
 
 document.getElementById('result_btn_5').addEventListener('click',(e)=>{
     e.preventDefault();
-    clearBody();
-    prodFetch(limit=limits,desc=descs,'col-md-3');
+    product('row row-cols-4');
 });
 
 document.querySelector('#par-select').addEventListener('change',(e)=>{
     e.preventDefault();
     clearBody();
     let limits=document.querySelector('#par-select').value;
-    prodFetch(limit=limits,desc=descs,'col-md-4');
+    prodFetch(limits);
 });
 
 document.querySelector('#sort-select').addEventListener('change',(e)=>{
     e.preventDefault();
     clearBody();
     let descs=document.querySelector('#sort-select').value;
-    prodFetch(limit=limits,desc=descs,'col-md-4');
+    prodFetch(descs);
 });
 /*  fetch scripts end */
 

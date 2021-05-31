@@ -1,12 +1,13 @@
+
+
 class Fetch {
     constructor() {
-        this.prodFetch(this.limits,this.descs,'col-md-3');
+        this.product('row row-cols-2 row-cols-md-4');
         this.eventList();
     }
-    prodFetch(limit,desc,col) {
+    prodFetch(limit,desc) {
         this.limits=limit;
         this.descs=desc;
-        this.cols=col;
         const url = `https://fakestoreapi.com/products?limit=${this.limits}&sort=${this.descs}`;
         fetch(url)
             .then(resp => resp.json())
@@ -24,8 +25,8 @@ class Fetch {
                 let tmp = ``;
                 for(let i=0; i< result.length; i++) {
                     tmp+=` 
-            <div class=${this.cols}>
-                <img src="${result[i].image}" class="card-img-top " style="height: 200px;width: 180px" alt="...">
+            <div class='col'>
+                <img src="${result[i].image}" class="card-img-top img-fluid"  alt="...">
                 <div class="card-body ">
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="product display-9 text-secondary">${result[i].title}</h5>
@@ -45,35 +46,42 @@ class Fetch {
     clearBody() {
         document.getElementById('output').innerHTML='';
     }
+    product(row){
+        this.rows=row;
+        this.clearBody();
+        this.prodFetch(this.limits,this.descs);
+        let rows = document.querySelector("#output");
+        rows.className=` ${row}`;
+
+    }
     eventList(){
         document.getElementById('result_btn_1').addEventListener('click',(e)=>{
             e.preventDefault();
-            this.clearBody();
-            product.prodFetch(this.limits,this.descs,'col-md-3');
+            product.product('row row-cols-1 row-cols-md-4');
         });
 
         document.getElementById('result_btn_2').addEventListener('click',(e)=>{
             e.preventDefault();
-            this.clearBody();
-            product.prodFetch(this.limits,this.descs,'col-12');
+
+            product.product('row row-cols-1');
         });
 
         document.getElementById('result_btn_3').addEventListener('click',(e)=>{
             e.preventDefault();
-            this.clearBody();
-            product.prodFetch(this.limits,this.descs,'col-md-6');
+
+            product.product('row row-cols-2');
         });
 
         document.getElementById('result_btn_4').addEventListener('click',(e)=>{
             e.preventDefault();
-            this.clearBody();
-            product.prodFetch(this.limits,this.descs,'col-md-4');
+
+            product.product('row row-cols-3');
         });
 
         document.getElementById('result_btn_5').addEventListener('click',(e)=>{
             e.preventDefault();
-            this.clearBody();
-            product.prodFetch(this.limits,this.descs,'col-md-3');
+
+            product.product('row row-cols-4');
         });
 
         document.querySelector('#par-select').addEventListener('change',(e)=>{
