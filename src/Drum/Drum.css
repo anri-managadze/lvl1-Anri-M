@@ -1,0 +1,43 @@
+#drum-machine {
+    min-width: 300px;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+#display {
+    max-width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.buttons {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+button {
+    min-width: 30%;
+    min-height: 100px;
+    background: #61dafb;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+button:hover {
+    background: #4453B1;
+}
+.MuiSwitch-root {
+    margin-left: 45%;
+}
+.MuiSwitch-switchBase {
+    color: red !important;
+}
+.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track, .MuiSwitch-track {
+    background: red!important;
+}

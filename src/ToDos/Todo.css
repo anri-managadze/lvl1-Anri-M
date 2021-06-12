@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 70px auto;
+  padding: 15px;
+  box-shadow: 3px 3px 3px 3px #c6c4c4;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  background: #4453B1;
+  margin: 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid #4453B1;
+}
+
+form input, form button, li input, li button {
+  border-radius: 3px;
+  height: 40px;
+  border: none;
+}
+
+form input {
+  margin-top: 20px;
+  width: 80%;
+  border-bottom: 1px solid #4453B1;
+}
+
+form button {
+  width: 20%;
+  background: #4453B1;
+  color: white;
+}
+
+li button {
+  background: #DD5982;
+  color: white;
+  width: 40px;
+}
+
+li input {
+  margin: 0;
+}
+
+p, .hidden {
+  width: 70%;
+}
+.todo-completed {
+  text-decoration: line-through;
+  background-color: #4453B1;
+  color: white;
+  border-radius: 3px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=Todo.css.map */
