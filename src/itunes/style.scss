@@ -1,6 +1,44 @@
 * {box-sizing: border-box};
 header{
   min-width: 100%;
-  border: 1px solid red;
   background: #763FDB;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+main {
+  display: flex;
+  .itunes {
+    margin: 80px 20px 0 20px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .container {
+        margin-top: 10px;
+        width: 220px;
+        display: flex;
+        padding: 10px;
+
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 15px;
+        }
+
+        audio {
+          width: 200px !important;
+          margin-top: 10px
+        }
+      }
+
+      .container:hover {
+        background: #D3D3D3;
+        border-radius: 15px;
+      }
+    }
+  }
 }

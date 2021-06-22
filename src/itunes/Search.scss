@@ -1,0 +1,14 @@
+.search {
+  margin-left: 7%;
+  width: 40%;
+  form {
+    input, button{
+      height: 30px;
+      border: none;
+      border-radius: 3px;
+    }
+    input {
+      width: 80%;
+    }
+  }
+}

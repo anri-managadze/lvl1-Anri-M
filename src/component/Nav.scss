@@ -1,0 +1,28 @@
+.nav {
+  width: 220px;
+  height: 88vh;
+  margin-top: 70px;
+  font-size: 20px;
+  background: #F9F9F9;
+  ul{
+    padding: 40px 0 0 0;
+    text-align: center;
+    li {
+      list-style: none;
+      margin-top: 40px;
+      padding: 3px;
+      border-radius: 2px;
+    }
+    li:hover{
+      background: #AFAFB1;
+    }
+    #nav_btn {
+      width: 150px;
+      height: 25px;
+      border: none;
+      border-radius: 3px;
+      background: #FC3636;
+      color: white;
+    }
+  }
+}
