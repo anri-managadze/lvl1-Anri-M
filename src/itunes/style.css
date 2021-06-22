@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  min-width: 100%;
+  border: 1px solid red;
+  background: #763FDB;
+}
+
+/*# sourceMappingURL=style.css.map */
