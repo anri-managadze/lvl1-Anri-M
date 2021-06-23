@@ -1,9 +1,12 @@
 .nav {
   width: 220px;
-  height: 88vh;
+  height: 90vh;
   margin-top: 70px;
   font-size: 20px;
   background: #F9F9F9;
+  position: fixed;
+  left: 0;
+  z-index: 1;
   ul{
     padding: 40px 0 0 0;
     text-align: center;
@@ -16,13 +19,23 @@
     li:hover{
       background: #AFAFB1;
     }
-    #nav_btn {
-      width: 150px;
-      height: 25px;
-      border: none;
-      border-radius: 3px;
-      background: #FC3636;
-      color: white;
+    .add {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      input {
+        height: 30px;
+        margin-top: 35px;
+        border: none;
+        background: #e2dede;
+      }
+      #mod_sub{
+        width: 150px;
+        border: none;
+        background: #763FDB;
+        border-radius: 3px;
+        color: #e2dede;
+      }
     }
   }
 }

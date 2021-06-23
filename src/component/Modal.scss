@@ -1,11 +1,10 @@
 .open {
-  margin-top: 50px;
-  width: 150px;
-  height: 30px;
-  border-radius: 3px;
-  background:#FF7A3E;
-  color: black;
-  border: none;
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    background: #FC3636;
+    color: white;
 }
 .cover {
   position: absolute;
@@ -19,11 +18,10 @@
   align-items: center;
   justify-content: center;
 
-
   .modal-cont {
     background: white;
-    min-width: 450px;
-    min-height: 400px;
+    min-width: 550px;
+    min-height: 450px;
     padding: 0 15px 0 15px;
     border-radius: 5px;
     .header {
@@ -31,14 +29,15 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #FF7A3E;
+      border-bottom: 2px solid #763FDB;
 
       .close {
         width: 25px;
         height: 25px;
         border-radius: 3px;
-        background: #FF7A3E;
+        background: #763FDB;
         border: none;
+        color: #e2dede;
       }
     }
   }
