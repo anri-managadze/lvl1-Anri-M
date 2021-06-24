@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #ECEDF3;
+}
+
+form {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 15px;
+}
+form label {
+  margin-top: 10px;
+  color: #404040;
+}
+form input {
+  width: 100%;
+  margin-top: 5px;
+  height: 25px;
+  border-radius: 3px;
+  border: 1px solid #cbcbcb;
+}
+form button {
+  margin-top: 20px;
+  width: 150px;
+  height: 28px;
+  border-radius: 3px;
+  border: none;
+  background: #18BD5B;
+  color: white;
+}
+
+/*# sourceMappingURL=Form.css.map */
