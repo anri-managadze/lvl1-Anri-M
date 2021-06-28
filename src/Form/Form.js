@@ -1,62 +1,73 @@
 import React from 'react';
 import './Form.css';
 import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 const Form = () => {
     const formik = useFormik({
         initialValues: {
             email: '',
             password: '',
-            name:{
-                firstname:'',
-                lastname:''
-                },
-            address:{
-                city:'',
-                street:'',
-                zipcode:'',
-            },
+            firstname:'',
+            lastname:'',
+            city:'',
+            street:'',
+            zipcode:'',
             phone:''
         },
+        validationSchema :Yup.object().shape({
+            email: Yup.string().email('Invalid email').required('Required'),
+            password: Yup.string().required('Password is required'),
+            firstname: Yup.string()
+                .min(2, 'Too Short!')
+                .max(50, 'Too Long!')
+                .required('Required'),
+            lastname: Yup.string()
+                .min(2, 'Too Short!')
+                .max(50, 'Too Long!')
+                .required('Required'),
+            city: Yup.string()
+                .min(2, 'Too Short!')
+                .max(50, 'Too Long!')
+                .required('Required'),
+            street: Yup.string()
+                .min(2, 'Too Short!')
+                .max(50, 'Too Long!')
+                .required('Required')
+        }),
         onSubmit: values => {
            console.log(values);
-            fetch('https://fakestoreapi.com/users',{
+            fetch('https://reqres.in/api/users',{
                 method:"POST",
                 body:JSON.stringify(
                     {
-                        email: values,
-                        username:'johnd',
-                        password:'m38rmF$',
-                        name:{
-                            firstname:'John',
-                            lastname:'Doe'
-                        },
-                        address:{
-                            city:'kilcoole',
-                            street:'7835 new road',
-                            number:3,
-                            zipcode:'12926-3874',
-                            geolocation:{
-                                lat:'-37.3159',
-                                long:'81.1496'
-                            }
-                        },
-                        phone:'1-570-236-7033'
+                        email: formik.values.email,
+                        password: formik.values.password,
+                        firstname: formik.values.firstname,
+                        lastname:formik.values.lastname,
+                        city:formik.values.city,
+                        street:formik.values.street,
+                        zipcode:formik.values.zipcode,
+                        phone:formik.values.phone
                     }
                 )
             })
                 .then(res=>res.json())
-                .then(json=>console.log(json));
+                .then(json=> {
+                    console.log(json)
+                    setStatus(true);
+                })
+                .catch(error => console.log(error, 'error'));
         },
-
     });
 
-
+    const {status, setStatus}=formik;
+    const Welcome =()=> (<div className='welcome'>Congratulations, You have successfully registered</div>)
 
     return (
         <div>
+            {status ? (<Welcome />) : (
             <form onSubmit={formik.handleSubmit}>
-
                 <label htmlFor="email">Email Address</label>
                 <input
                     id="email"
@@ -65,6 +76,7 @@ const Form = () => {
                     onChange={formik.handleChange}
                     value={formik.values.email}
                 />
+                {formik.touched.email&&formik.errors.email ? (<div>{formik.errors.email}</div>) : ('')}
                 <label htmlFor="password">Password</label>
                 <input
                     id="password"
@@ -73,45 +85,50 @@ const Form = () => {
                     onChange={formik.handleChange}
                     value={formik.values.password}
                 />
-                <label htmlFor="name.firstname">First Name</label>
+                {formik.touched.password&&formik.errors.password ? (<div>{formik.errors.password}</div>) : ('')}
+                <label htmlFor="firstname">First Name</label>
                 <input
-                    id="name.firstname"
-                    name="name.firstname"
+                    id="firstname"
+                    name="firstname"
                     type="text"
                     onChange={formik.handleChange}
-                    value={formik.values.name.firstname}
+                    value={formik.values.firstname}
                 />
-                <label htmlFor="name.lastname">Last Name</label>
+                {formik.touched.firstname&&formik.errors.firstname ? (<div>{formik.errors.firstname}</div>) : (' ')}
+                <label htmlFor="lastname">Last Name</label>
                 <input
-                    id="name.lastname"
-                    name="name.lastname"
+                    id="lastname"
+                    name="lastname"
                     type="text"
                     onChange={formik.handleChange}
-                    value={formik.values.name.lastname}
+                    value={formik.values.lastname}
                 />
-                <label htmlFor="address.city">City</label>
+                {formik.touched.lastname&&formik.errors.lastname ? (<div>{formik.errors.lastname}</div>) : (' ')}
+                <label htmlFor="city">City</label>
                 <input
-                    id="address.city"
-                    name="address.city"
+                    id="city"
+                    name="city"
                     type="text"
                     onChange={formik.handleChange}
-                    value={formik.values.address.city}
+                    value={formik.values.city}
                 />
-                <label htmlFor="address.street">Street Address</label>
+                {formik.touched.city&&formik.errors.city ? (<div>{formik.errors.city}</div>) : (' ')}
+                <label htmlFor="street">Street Address</label>
                 <input
-                    id="address.street"
-                    name="address.street"
+                    id="street"
+                    name="street"
                     type="text"
                     onChange={formik.handleChange}
-                    value={formik.values.address.street}
+                    value={formik.values.street}
                 />
-                <label htmlFor="address.zipcode">ZipCode</label>
+                {formik.touched.street&&formik.errors.street ? (<div>{formik.errors.street}</div>) : (' ')}
+                <label htmlFor="zipcode">ZipCode</label>
                 <input
-                    id="address.zipcode"
-                    name="address.zipcode"
+                    id="zipcode"
+                    name="zipcode"
                     type="number"
                     onChange={formik.handleChange}
-                    value={formik.values.address.zipcode}
+                    value={formik.values.zipcode}
                 />
                 <label htmlFor="phone">Phone Number</label>
                 <input
@@ -123,8 +140,9 @@ const Form = () => {
                 />
                 <button type="submit">Submit</button>
             </form>
+            )}
         </div>
-    );
+            );
 };
 
 export default Form;

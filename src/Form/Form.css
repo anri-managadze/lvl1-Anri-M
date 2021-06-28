@@ -36,4 +36,11 @@ form button {
   color: white;
 }
 
+.welcome {
+  margin: 20% auto;
+  text-align: center;
+  font-size: 30px;
+  color: green;
+}
+
 /*# sourceMappingURL=Form.css.map */
